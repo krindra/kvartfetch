@@ -1,0 +1,10 @@
+#!/bin/bash
+PRICE="16 500 000 ₽"
+ADDRES="Москва, улица Дмитрия Ульянова, 27"
+TYPE="Вторичка"
+KITCHEN="8.9 м"
+FLOOR="18"
+FLOORS="19"
+#этажность типо
+ALLSPACE="36.1 м"
+LIVINGSPACE="16.2 м"
