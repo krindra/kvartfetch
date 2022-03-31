@@ -15,8 +15,8 @@ cd kvartfetch
 chmod +x install
 sudo ./install
 #if you dont have config file
-mkdir $HOME/.config/kvarfetch/
-cp config $HOME/.config/kvarfetch/config
+mkdir $HOME/.config/kvartfetch/
+cp config $HOME/.config/kvartfetch/config
 ```
 ## Configuration
-Edit your ``$HOME/.config/kvarfetch/config ``
+Edit your ``$HOME/.config/kvartfetch/config ``
