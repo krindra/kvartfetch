@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "installing..."
+cp ./kvarfetch /bin/kvarfetch
+chmod +x kvarfetch
+echo "coping config file..."
+mkdir -pv $HOME/.config/kvarfetch
+cp ./config $HOME/.config/kvarfetch/config
+echo "all done! edit your config file at $HOME/.config/kvarfetch/config !"
+exit 0
