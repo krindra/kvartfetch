@@ -1,0 +1,22 @@
+#!/bin/bash
+PRICE="16 500 000 ₽"
+ADDRES="Москва, улица Дмитрия Ульянова, 27"
+TYPE="Вторичка"
+KITCHEN="8.9 м"
+FLOOR="18"
+FLOORS="19"
+#этажность типо
+ALLSPACE="36.1 м"
+LIVINGSPACE="16.2 м"
+
+echo -e "\033[35mKVARTIRA FETCH\033[0m"
+echo -e "-----------------------"
+echo -e "\033[31mАдрес: $ADDRESm"
+echo -e "\033[36mЦена: $PRICE\033[0m"
+echo -e "-----------------------"
+echo -e "\033[36mТип недвижимости: \033[32m$TYPE"
+echo -e "\033[36mПлощадь кухни: \033[32m$KITCHEN"
+echo -e "\033[36mЭтаж: \033[32m$FLOOR"
+echo -e "\033[36mЭтажность дома: \033[32m$FLOORS"
+echo -e "\033[36mОбщая площадь: \033[32m$ALLSPACE"
+echo -e "\033[36mЖилая площадь: \033[32m$LIVINGSPACE"
