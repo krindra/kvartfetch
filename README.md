@@ -13,7 +13,7 @@ thats all!
 git clone https://github.com/kravandir/kvartfetch
 cd kvartfetch
 chmod +x install
-./install
+sudo ./install
 ```
 
 ## Configuration
