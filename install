@@ -2,5 +2,8 @@
 echo "installing..."
 cp ./kvarfetch /bin/kvarfetch
 chmod +x kvarfetch
+mkdir /usr/share/doc/kvartfetch
+cp config /usr/share/doc/kvartfetch
 echo "all done! Copy config file to $HOME/.config/kvarfetch/config !"
+echo "you can find default config in /usr/share/doc/kvartfetch"
 exit 0
