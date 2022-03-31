@@ -5,6 +5,7 @@ fetching info about your xata🏠
 
 ## Dependencies
 - `bash`
+
 thats all!
 
 ## Installation
