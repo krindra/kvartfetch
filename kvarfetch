@@ -11,7 +11,7 @@ LIVINGSPACE="16.2 м"
 
 echo -e "\033[35mKVARTIRA FETCH\033[0m"
 echo -e "-----------------------"
-echo -e "\033[31mАдрес: $ADDRESm"
+echo -e "\033[31mАдрес: $ADDRES"
 echo -e "\033[36mЦена: $PRICE\033[0m"
 echo -e "-----------------------"
 echo -e "\033[36mТип недвижимости: \033[32m$TYPE"
