@@ -1,6 +1,6 @@
 #!/bin/bash
 set -a
-source $HOME/.config/kvarfetch/config
+source $HOME/.config/kvartfetch/config
 
 #colors
 if [ -x "$(command -v tput)" ]; then
