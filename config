@@ -1,6 +1,7 @@
 #!/bin/bash
 PRICE="16 500 000 ₽"
 ADDRES="Москва, улица Дмитрия Ульянова, 27"
+ROOMS="1"
 TYPE="Вторичка"
 KITCHEN="8.9 м"
 FLOOR="18"
