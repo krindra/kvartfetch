@@ -1,7 +1,7 @@
 # Kvartfetch
 fetching info about your xata🏠
 
-![src](https://media.discordapp.net/attachments/958804013430763520/959141059307372554/fetch.png )
+![src](https://media.discordapp.net/attachments/932276304374534147/959167951414640690/fetch.png )
 
 ## Dependencies
 - `bash`
