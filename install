@@ -6,8 +6,12 @@ if [[ "$1" == "-t" ]]
         then
         echo "termux installation"
         cp kvartfetch $HOME/../usr/bin
+        mkdir -p $HOME/../usr/share/doc/kvartfetch
+        cp config $HOME/../usr/share/doc/kvartfetch
 else
         cp kvarfetch /bin/kvarfetch
+        mkdir -p /usr/share/doc/kvartfetch
+        cp config /usr/share/doc/kvartfetch
 fi
 mkdir -p /usr/share/doc/kvartfetch
 cp config /usr/share/doc/kvartfetch
