@@ -1,6 +1,20 @@
 #!/bin/bash
 set -a
-source $HOME/.config/kvartfetch/config
+if [ -e /usr/share/doc/kvartfetch/config ]; then
+        if [ -e $HOME/.config/kvartfetch/config ]; then
+                source $HOME/.config/kvartfetch/config
+        else
+                source /usr/share/doc/kvartfetch/config
+        fi
+else
+        if [ -e $HOME/../usr/share/doc/kvartfetch ]; then
+                source $HOME/../usr/share/doc/kvartfetch
+        else
+                echo "Cannot find config! Exit..."
+                exit 1
+        fi
+fi
+
 
 #colors
 if [ -x "$(command -v tput)" ]; then
