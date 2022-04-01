@@ -5,8 +5,7 @@ fetching info about your xata🏠
 
 ## Dependencies
 - `bash`
-
-thats all!
+- `ncurses-utils` (Termux or OpenSUSE)
 
 ## Installation
 ```zsh
