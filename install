@@ -14,5 +14,5 @@ else
 fi
 echo "all done! Copy config file to $HOME/.config/kvartfetch/config !"
 echo "you can find default config in /usr/share/doc/kvartfetch"
-echo "($HOME/../usr/share/doc/kvartfetch in termux)
+echo "($HOME/../usr/share/doc/kvartfetch in termux)"
 exit 0
