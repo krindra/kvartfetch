@@ -13,9 +13,7 @@ git clone https://github.com/kravandir/kvartfetch
 cd kvartfetch
 chmod +x install
 sudo ./install
-#if you dont have config file
-mkdir $HOME/.config/kvartfetch/
-cp config $HOME/.config/kvartfetch/config
+#if you using termux run ./install -t
 ```
 ## Configuration
 Edit your ``$HOME/.config/kvartfetch/config ``
