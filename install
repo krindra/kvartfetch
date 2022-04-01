@@ -9,8 +9,8 @@ if [[ "$1" == "-t" ]]
         cp config $HOME/../usr/share/doc/kvartfetch/
         chmod +x $HOME/../usr/share/doc/kvartfetch/config
 else
-        cp kvarfetch /bin/kvarfetch
-        chmod +x /bin/kvarfetch
+        cp kvartfetch /bin/kvartfetch
+        chmod +x /bin/kvartfetch
         mkdir -p /usr/share/doc/kvartfetch
         cp config /usr/share/doc/kvartfetch
         chmod +x /usr/share/doc/kvartfetch/config
