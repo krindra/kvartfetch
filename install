@@ -13,8 +13,7 @@ else
         mkdir -p /usr/share/doc/kvartfetch
         cp config /usr/share/doc/kvartfetch
 fi
-mkdir -p /usr/share/doc/kvartfetch
-cp config /usr/share/doc/kvartfetch
 echo "all done! Copy config file to $HOME/.config/kvartfetch/config !"
 echo "you can find default config in /usr/share/doc/kvartfetch"
+echo "($HOME/../usr/share/doc/kvartfetch in termux)
 exit 0
