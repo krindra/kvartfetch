@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "installing..."
 chmod +x kvartfetch config
-cp kvartfetch /bin/kvarfetch
 if [[ "$1" == "-t" ]]
         then
         echo "termux installation"
