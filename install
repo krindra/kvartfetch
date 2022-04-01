@@ -1,8 +1,15 @@
 #!/bin/bash
 echo "installing..."
+chmod +x kvarfetch config
 cp ./kvarfetch /bin/kvarfetch
-chmod +x kvarfetch
-mkdir /usr/share/doc/kvartfetch
+if [[ "$1" == "-t" ]]
+        then
+        echo "termux installation"
+        cp kvartfetch $HOME/../usr/bin
+else
+        cp kvarfetch /bin/kvarfetch
+fi
+mkdir -p /usr/share/doc/kvartfetch
 cp config /usr/share/doc/kvartfetch
 echo "all done! Copy config file to $HOME/.config/kvartfetch/config !"
 echo "you can find default config in /usr/share/doc/kvartfetch"
