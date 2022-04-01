@@ -1,5 +1,7 @@
 # Kvartfetch
-fetching info about your xata🏠
+### fetching info about your xata🏠
+
+Supports allmost all GNU/Linux distros and Termux
 
 Thank for help [Creepy0964!](https://github.com/Creepy0964)
 
@@ -7,7 +9,7 @@ Thank for help [Creepy0964!](https://github.com/Creepy0964)
 
 ## Dependencies
 - `bash`
-- `ncurses-utils` (Termux or OpenSUSE)
+- `ncurses-utils` (Termux, OpenSUSE)
 
 ## Installation
 ```zsh
