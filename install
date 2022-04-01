@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "installing..."
-chmod +x kvarfetch config
+chmod +x kvartfetch config
 cp ./kvarfetch /bin/kvarfetch
 if [[ "$1" == "-t" ]]
         then
