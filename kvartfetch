@@ -1,21 +1,5 @@
 #!/bin/busybox ash
-set -a
-if [ -e /usr/share/doc/kvartfetch/config ]; then
-        if [ -e $HOME/.config/kvartfetch/config ]; then
-                source $HOME/.config/kvartfetch/config
-        else
-                source /usr/share/doc/kvartfetch/config
-        fi
-else
-        if [ -e $HOME/../usr/share/doc/kvartfetch ]; then
-                source $HOME/../usr/share/doc/kvartfetch
-        else
-                echo "Cannot find config! Exit..."
-                exit 1
-        fi
-fi
-
-
+source $HOME/.config/kvartfetch/config
 #colors
 if [ -x "$(command -v tput)" ]; then
 	bold="$(tput bold)"
@@ -29,7 +13,6 @@ if [ -x "$(command -v tput)" ]; then
 	white="$(tput setaf 7)"
 	reset="$(tput sgr0)"
 fi
-
 # you can change these
 lc="${reset}${blue}"         # labels
 ic="${reset}"                       # info
@@ -39,9 +22,7 @@ ad="${reset}${red}"		    # addres
 ro="${reset}${cyan}"		    # rooms
 et="${reset}${green}"
 ## OUTPUT
-
 cat <<EOF
-
 ${c0} _____    ${na}KVARTIRA FETCH${reset}
 ${c0}|o o o|   -------------------------
 ${c0}|o o o|   ${ad}Адрес:     ${ADDRES}${reset}

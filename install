@@ -1,37 +1,40 @@
 #!/bin/sh
 echo "kvartfetch installer 0.2"
 echo ""
-echo "1) Arch Linux"
+echo "1) Arch"
     echo "2) Debian"
     echo "3) Termux"
     read -p "Select needed distro: " distro
     case $distro in
       "1")
+		echo "Arch installation"
 		sudo pacman -Sy busybox
-		cp kvartfetch /bin/kvartfetch
-		chmod +x /bin/kvartfetch
-		mkdir -p /usr/share/doc/kvartfetch
-		cp config /usr/share/doc/kvartfetch
-		chmod +x /usr/share/doc/kvartfetch/config
+		cp kvartfetch /usr/local/bin/kvartfetch
+		chmod +x /usr/local/bin/kvartfetch
+		mkdir -p $HOME/.config/kvartfetch
+		cp config $HOME/.config/kvartfetch/config
+		chmod +x $HOME/.config/kvartfetch/config
       ;;
       "2")
+		echo "Debian installation"
+		sudo apt update
 		sudo apt install busybox
-		cp kvartfetch /bin/kvartfetch
-		chmod +x /bin/kvartfetch
-		mkdir -p /usr/share/doc/kvartfetch
-		cp config /usr/share/doc/kvartfetch
-		chmod +x /usr/share/doc/kvartfetch/config
+		cp kvartfetch /usr/local/bin/kvartfetch
+		chmod +x /usr/local/bin/kvartfetch
+		mkdir -p $HOME/.config/kvartfetch
+		cp config $HOME/.config/kvartfetch/config
+		chmod +x $HOME/.config/kvartfetch/config
       ;;    
       "3")
+		echo "Termux installation"
 		pkg install busybox
-		echo "termux installation"
-		cp kvartfetch $HOME/../usr/bin/
-		chmod +x $HOME/../usr/bin/kvartfetch
-		mkdir -p $HOME/../usr/share/doc/kvartfetch
-		cp config $HOME/../usr/share/doc/kvartfetch/
-		chmod +x $HOME/../usr/share/doc/kvartfetch/config
+		cp kvartfetch $HOME/../usr/local/bin/kvartfetch
+		chmod +x $HOME/../usr/local/bin/kvartfetch
+		mkdir -p $HOME/.config/kvartfetch
+		cp config $HOME/.config/kvartfetch/config
+		chmod +x $HOME/.config/kvartfetch/config
       ;;
     esac
-echo "all done! Copy config file to $HOME/.config/kvartfetch/config !"
-echo "you can find default config in /usr/share/doc/kvartfetch"
+echo "you can find config in .config/kvartfetch/config"
+echo "or"
 echo "($HOME/../usr/share/doc/kvartfetch in termux)"
