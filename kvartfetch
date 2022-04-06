@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/busybox ash
 set -a
 if [ -e /usr/share/doc/kvartfetch/config ]; then
         if [ -e $HOME/.config/kvartfetch/config ]; then

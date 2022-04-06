@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/busybox ash
 PRICE="16 500 000 ₽"
 ADDRES="Москва, улица Дмитрия Ульянова, 27"
 ROOMS="1"
